@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+}
+
+body{
+	background: white;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(4.35rem,auto);
+	grid-gap: 1rem;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+header{
+	grid-column: 2/12;
+	grid-row: 1/2;
+	position: relative;
+	top: 0;
+	margin-bottom: 40px;
+	z-index: 900;
+	background: linear-gradient(green 50%, green 50%); 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(4.35rem, auto);
+}
+
+#logo{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin: 0.9em;
+}
+
+nav{
+	grid-column: 3/13;
+	grid-row: 1/2;
+}
+
+
+/* slider */
+.b2{	
+	grid-column: 1/13;
+	grid-row: 1/5;	
+}
+
+
+#first{
+	background-image: url('../img/p1.jpg');
+	background-color: rgba(0,0,0,0.5);
+	background-position: center;
+	background-clip: border-box;
+	background-size: cover;
+}
+
+#sec{
+	background-image: url('../img/pizza2.jpg');
+	background-position: center;
+	background-clip: border-box;
+	background-size: cover;
+}
+
+#third{
+	background-image: url('../img/p3.jpg');
+	background-position: center;
+	background-clip: border-box;
+	background-size: cover;
+}
+
+/* Promoções */
+main{
+	grid-row: 5/6;
+	grid-column: 2/12;
+
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: minmax(3rem);
+	grid-gap: 1em;
+}
+
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+
+#promocoes{
+	grid-column: 1/4;
+	grid-row: 1/2;
+	color: black;
+	margin-top: 1em;
+}
+
+#conteudo1{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+#conteudo2{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+#conteudo3{
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+#delivery{
+	grid-column: 1/4;
+	grid-row: 3/4;
+	color: black;
+	margin-top: 1em;	
+}
+
+#link1{
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+#link2{
+	grid-column: 2/3;
+	grid-row: 4/5;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#link3{
+	grid-column: 3/4;
+	grid-row: 4/5;
+}
+
+#txt1{
+	grid-column: 1/2;
+	grid-row: 5/6;
+	text-align: center;
+	background-color: green;
+	color: white;
+	border-radius: 20px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+#txt2{
+	grid-column: 2/3;
+	grid-row: 5/6;
+	text-align: center;
+	background-color: green;
+	color: white;
+	border-radius: 20px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+#txt3{
+	grid-column: 3/4;
+	grid-row: 5/6;
+	text-align: center;
+	background-color: green;
+	color: white;
+	border-radius: 20px;
+	padding: 5px;
+	
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+footer{
+	grid-column: 1/13;
+	grid-row: 6/7;
+	width: 100%;
+	height: 100px;
+	background-color: red;
+	color:white;
+	margin-top: 60px;
+}
+
+footer p{ 
+	font-size:small;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3.5%;
+}
+
+.zoom{
+	overflow: hidden;
+}
+
+/*imagens promoção*/
+
+.zoom img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img{
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+#sub-slider{
+	display: none;
+}
+
+figcaption{
+	display: none;
+}
+
+@media all and (max-width: 836px){
+	#promocoes{
+		font-size: 30px;
+	}
+
+	#conteudo1{
+		grid-column: 1/4;
+		grid-row: 2/3;
+	}
+
+	#conteudo2{
+		grid-column: 1/4;
+		grid-row: 3/4;
+	}
+
+	#conteudo3{
+		grid-column: 1/4;
+		grid-row: 4/5;
+	}
+
+	#delivery{
+		grid-column: 1/4;
+		grid-row: 5/6;
+		font-size: 30px;
+	}
+
+	#link1{
+		grid-column: 2/3;
+		grid-row: 6/7;
+	}
+	
+	#txt1{
+		grid-column: 1/4;
+		grid-row: 7/8;
+		font-size: 20px;
+	}
+
+	#link2{
+		grid-column: 2/3;
+		grid-row: 8/9;
+	}
+
+	#txt2{
+		grid-column: 1/4;
+		grid-row: 9/10;
+		font-size: 20px;
+	}
+
+	#link3{
+		grid-column: 2/3;
+		grid-row: 10/11;
+	}
+
+
+	#txt3{
+		grid-column: 1/4;
+		grid-row: 11/12;
+		font-size: 20px;
+	}
+
+	footer p{ 
+		margin-top: 5%;
+	}
+}
+
+@media all and (max-width: 522px){
+
+	figcaption, #sub-slider{
+		display: block;
+	}
+
+	.b2 {
+	  display: inline-block;
+	  position: relative;
+	}
+
+	.b2 figcaption {
+	  position: absolute;
+	  padding-left: 1em;
+	  top: 145px;
+	  right: 20px;
+	  font-size: 50px;
+	  color: white;
+	  text-shadow: 0px 0px 5px black;
+	}
+}
+
+@media all and (max-width: 484px){
+	.b2 figcaption {
+	  top: 100px;
+	  right: 20px;
+	  font-size: 40px;
+	  font-weight: bolder;
+	}	
+}
+
+@media all and (max-width: 326px){
+	.b2 figcaption{
+		top: 50px;
+		font-size: 30px;
+	}
+
+	
+}

@@ -1,0 +1,137 @@
+
+
+.cf:before, .cf:after {
+	content:" ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 2;
+}
+
+	
+.menu {
+	list-style:none;
+	margin: 8% auto 1% auto;
+	width: auto;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+}
+.menu > li {
+	background: green;
+	float: left;
+	position: relative;
+ 
+	/*-webkit-transform: skewX(25deg);*/
+	transition: 0.2s ease-in;
+}
+.menu a {
+	display: block;
+	color: white;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	font-family: 'Ubuntu', 'Roboto';
+	font-size: 25px;
+	font-weight:bold;
+	transition: 0.3s ease-in;
+}
+.menu li:hover {
+	background-color: white;
+	border-radius: 5px;
+}
+.menu > li > a {
+	padding: 2em 1em;
+}
+.menu > li > a:hover {
+ color: green;
+}
+
+nav header img{
+	max-width: 100%;
+	height: auto;
+
+}
+
+nav {
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+}
+
+.fa {
+	color:green;
+	padding:15px;
+	background-color: white;
+	position: relative;
+	border-radius: 5px;
+}
+
+.sociais{
+	
+	list-style:none;
+	
+
+}
+
+.sociais > li{
+	margin-top:40px;
+	margin-right:10px;
+	margin-left:10px;
+	display: inline-block;	
+}
+
+.start-nav{
+	display: none;
+}
+
+.sociais > li a {
+	text-decoration: none;
+}
+
+
+@media all and (max-width: 1166px) {
+	#logo{
+		width: 200px;
+	}
+	
+	.menu a {
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.sociais > li{
+		margin-top:30px;
+	}
+
+}
+
+@media all and (max-width: 1022px){
+	#logo{
+		width: 150px;
+	}
+
+	.menu > li > a {
+		padding: 1.3em 0.5em;
+	}
+
+	.sociais > li{
+		margin-top:20px;
+	}
+}
+
+@media all and (max-width: 872px){
+	#logo{
+		width: 140px;
+	}
+
+	.menu > li > a {
+		padding: 1.1em 0.4em;
+	}
+
+	.sociais > li{
+		margin-top:16px;
+	}	
+}

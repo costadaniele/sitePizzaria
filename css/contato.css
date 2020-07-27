@@ -1,0 +1,106 @@
+header{
+	grid-column: 2/12;
+	grid-row: 1/2;
+	position: relative;
+	top: 0;
+	margin-bottom: 40px;
+	z-index: 900;
+	background: linear-gradient(green 50%, green 50%); 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(4.35rem, auto);
+}
+
+#logo{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin: 0.2em;
+}
+
+nav{
+	grid-column: 3/13;
+	grid-row: 1/2;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  color: black;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+}
+
+.margin{
+  margin: 0 auto;
+  display: flex;
+}
+
+.maps {
+  padding:5%;
+}
+
+input, textarea{
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+textarea{
+	border: #FF3023 3px solid;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+input{
+	border: #FF3023 3px solid;
+	border-radius: 5px;
+	height: 2em;
+	padding: 2px;
+}
+
+button{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: #FFFF00;
+	padding: 0.5em 1em 0.5em 1em;
+	border: #FFFF00 3px solid;
+	font-size: 0.8em;
+	border-radius: 2px;
+}
+
+#titulo{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+footer{
+	grid-column: 1/13;
+	grid-row: 6/7;
+	width: 100%;
+	height: 100px;
+	background-color: red;
+	color:white;
+	
+}
+
+footer p{ 
+	font-size:small;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3.5%;
+}
+
+
+@media all and (max-width: 1022px){
+	.container{
+		display: block;
+	}
+}

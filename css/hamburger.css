@@ -1,0 +1,107 @@
+@media (max-width: 842px){
+
+	.menu, .sociais{
+		display: none;
+	}
+
+	#logo{
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	header{
+		background: transparent;
+	}
+
+
+	header {
+		background: linear-gradient(green 50%, transparent 50%);
+		padding: 30px 0;
+		position: relative;
+	}
+
+
+	.start-nav {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 0%;
+		background-color: green;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.start-nav--open {
+		height: auto;
+	}
+
+	.start-nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.start-nav li {
+		border-bottom: 1px solid white;
+	}
+
+	.start-nav li:last-child {
+		border-bottom: none;
+	}
+
+	.start-nav a {
+		color: white;
+		display: block;
+		text-decoration: none;
+		padding: 1em 3em;
+		text-transform: uppercase;
+		transition: 0.3s ease-in;
+	}
+
+	.start-nav a:hover,
+	.start-nav a:focus {
+		background-color: yellow;
+		color: black;
+	}
+
+	.menu-toggle {
+		padding: 1em;
+		position: absolute;
+		right: 0.75em;
+		top: 0.75em;
+		cursor: pointer;
+	}
+
+	.hambuger,
+	.hambuger::before,
+	.hambuger::after {
+		content: '';
+		display: block;
+		background: white;
+		width: 1.75em;
+		height: 3px;
+		transition: all ease-in-out 0.3s;
+	}
+
+	.hambuger::before {
+		transform: translateY(-7px);
+	}
+
+	.hambuger::after {
+		transform: translateY(4.5px);
+	}
+
+	.open .hambuger {
+		transform: rotate(45deg);
+	}
+
+	.open .hambuger::before {
+		opacity: 0;
+	}
+
+	.open .hambuger::after {
+		transform: trarotate(-90deg) translateY(-3px);
+	}
+
+}
